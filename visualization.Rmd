@@ -1,0 +1,21 @@
+---
+title: "visualization"
+author: "Ang Sonam Sherpa"
+date: "11/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(janitor)
+library(ggplot2)
+```
+
+
+```{r}
+
+
+
+```
+

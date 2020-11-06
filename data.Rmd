@@ -12,13 +12,14 @@ library(janitor)
 library(pdftables)
 ```
 
+
 ```{r}
 # data from Nepali women in Politics (page 83)
 
 # constituent assembly refers to the legislative parliament formed to write
 # the final constitution. This was later named the legislative parliament.
 
-history <- tibble(
+electionhistory <- tibble(
   year = c(1959, 1986, 1991, 1999, 2008, 2013),
   type = c("parliamentary", "parliamentary", "parliamentary",
            "parliamentary and local bodies", "constituent assembly",
@@ -58,7 +59,6 @@ elections2017 <- read.csv("data/elections2017.csv") %>%
 ```
 
 
-
 ```{r}
 
 # data from Women's Representation in Bureaucracy: Reservation Policy in Nepali
@@ -67,19 +67,19 @@ elections2017 <- read.csv("data/elections2017.csv") %>%
 # converted to an excel file online, and manually created a new one with the
 # relevant datasets
 
-bureaucracytype <- read.csv("data/bureaurcarytype.csv") %>%
+bureaucracytype <- read.csv("data/ncstype.csv") %>%
   clean_names()
 
-reservationproportion <- read.csv("data/reservationproportion.csv") %>%
+reservationproportion <- read.csv("data/ncsreservationproportion.csv") %>%
   clean_names()
 
-levelhistory <- read.csv("data/levelhistory.csv") %>%
+levelhistory <- read.csv("data/ncslevelhistory.csv") %>%
   clean_names()
 
-levelrecent <- read.csv("data/levelrecent.csv") %>%
+levelrecent <- read.csv("data/ncslevelrecent.csv") %>%
   clean_names()
 
-trend <- read.csv("data/trend2007to2018.csv") %>%
+ncstrend <- read.csv("data/ncstrend2007to2018.csv") %>%
   clean_names()
 
 ```
